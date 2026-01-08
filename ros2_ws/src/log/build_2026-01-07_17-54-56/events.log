@@ -1,0 +1,40 @@
+[0.000000] (-) TimerEvent: {}
+[0.000554] (vio_perception_pipeline) JobQueued: {'identifier': 'vio_perception_pipeline', 'dependencies': OrderedDict()}
+[0.000979] (vio_perception_pipeline) JobStarted: {'identifier': 'vio_perception_pipeline'}
+[0.099507] (-) TimerEvent: {}
+[0.200039] (-) TimerEvent: {}
+[0.300597] (-) TimerEvent: {}
+[0.401141] (-) TimerEvent: {}
+[0.501645] (-) TimerEvent: {}
+[0.602104] (-) TimerEvent: {}
+[0.702792] (-) TimerEvent: {}
+[0.803324] (-) TimerEvent: {}
+[0.903829] (-) TimerEvent: {}
+[1.004323] (-) TimerEvent: {}
+[1.104896] (-) TimerEvent: {}
+[1.205700] (-) TimerEvent: {}
+[1.306408] (-) TimerEvent: {}
+[1.407410] (-) TimerEvent: {}
+[1.489994] (vio_perception_pipeline) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/build', '--no-deps', 'symlink_data'], 'cwd': '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_CA:en', 'USER': 'group7', 'XDG_SESSION_TYPE': 'x11', 'Pangolin_DIR': '/usr/local/lib/cmake/Pangolin', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/group7/Desktop/Autonomous-Drone/ros2_ws/src/external/ORB_SLAM3/lib', 'HOME': '/home/group7', 'OLDPWD': '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/vio_perception_pipeline', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2418', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/group7/Desktop/Autonomous-Drone/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'group7', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/humble/share', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'group7', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/humble/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/group7/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/group7-desktop:@/tmp/.ICE-unix/2385,unix/group7-desktop:/tmp/.ICE-unix/2385', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/404a9359_6c2b_4adf_aa9f_ec96ca35ac18', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/vio_perception:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/vio_mavlink_bridge:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/vio_bringup:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/orbslam3_bridge:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/depthai_cam:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/humble/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/opt/ros/humble/share', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline', 'ORB_SLAM3_PATH': '/home/group7/ORB_SLAM3', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/lib/python3.10/site-packages:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/vio_perception/lib/python3.10/site-packages:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/depthai_cam/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/vio_mavlink_bridge:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/vio_bringup:/home/group7/Desktop/Autonomous-Drone/ros2_ws/install/orbslam3_bridge'}, 'shell': False}
+[1.507521] (-) TimerEvent: {}
+[1.608265] (-) TimerEvent: {}
+[1.708874] (-) TimerEvent: {}
+[1.809532] (-) TimerEvent: {}
+[1.910143] (-) TimerEvent: {}
+[1.998625] (vio_perception_pipeline) StdoutLine: {'line': b'running develop\n'}
+[2.010239] (-) TimerEvent: {}
+[2.110832] (-) TimerEvent: {}
+[2.211505] (-) TimerEvent: {}
+[2.312147] (-) TimerEvent: {}
+[2.325133] (vio_perception_pipeline) StdoutLine: {'line': b'running egg_info\n'}
+[2.325619] (vio_perception_pipeline) StdoutLine: {'line': b'creating vio_perception_pipeline.egg-info\n'}
+[2.325968] (vio_perception_pipeline) StdoutLine: {'line': b'writing vio_perception_pipeline.egg-info/PKG-INFO\n'}
+[2.326342] (vio_perception_pipeline) StdoutLine: {'line': b'writing dependency_links to vio_perception_pipeline.egg-info/dependency_links.txt\n'}
+[2.326707] (vio_perception_pipeline) StdoutLine: {'line': b'writing requirements to vio_perception_pipeline.egg-info/requires.txt\n'}
+[2.326951] (vio_perception_pipeline) StdoutLine: {'line': b'writing top-level names to vio_perception_pipeline.egg-info/top_level.txt\n'}
+[2.327240] (vio_perception_pipeline) StdoutLine: {'line': b"writing manifest file 'vio_perception_pipeline.egg-info/SOURCES.txt'\n"}
+[2.329534] (vio_perception_pipeline) StderrLine: {'line': b"error: package directory 'vio_perception_pipeline' does not exist\n"}
+[2.402053] (vio_perception_pipeline) CommandEnded: {'returncode': 1}
+[2.404073] (vio_perception_pipeline) JobEnded: {'identifier': 'vio_perception_pipeline', 'rc': 1}
+[2.412484] (-) TimerEvent: {}
+[2.413920] (-) EventReactorShutdown: {}

@@ -1,0 +1,9 @@
+running develop
+running egg_info
+creating vio_perception_pipeline.egg-info
+writing vio_perception_pipeline.egg-info/PKG-INFO
+writing dependency_links to vio_perception_pipeline.egg-info/dependency_links.txt
+writing requirements to vio_perception_pipeline.egg-info/requires.txt
+writing top-level names to vio_perception_pipeline.egg-info/top_level.txt
+writing manifest file 'vio_perception_pipeline.egg-info/SOURCES.txt'
+error: package directory 'vio_perception_pipeline' does not exist

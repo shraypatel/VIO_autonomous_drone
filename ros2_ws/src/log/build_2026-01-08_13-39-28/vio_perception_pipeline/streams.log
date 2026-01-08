@@ -1,0 +1,31 @@
+[1.482s] Invoking command in '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/vio_perception_pipeline': PYTHONPATH=/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/vio_perception_pipeline build --build-base /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/build install --record /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/install.log --single-version-externally-managed install_data
+[2.008s] running egg_info
+[2.010s] creating ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info
+[2.010s] writing ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/PKG-INFO
+[2.011s] writing dependency_links to ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/dependency_links.txt
+[2.011s] writing requirements to ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/requires.txt
+[2.011s] writing top-level names to ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/top_level.txt
+[2.012s] writing manifest file '../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/SOURCES.txt'
+[2.013s] reading manifest file '../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/SOURCES.txt'
+[2.015s] writing manifest file '../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/SOURCES.txt'
+[2.015s] running build
+[2.016s] running install
+[2.016s] running install_data
+[2.017s] creating /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/ament_index
+[2.017s] creating /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/ament_index/resource_index
+[2.017s] creating /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/ament_index/resource_index/packages
+[2.017s] copying resource/vio_perception_pipeline -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/ament_index/resource_index/packages
+[2.018s] copying package.xml -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline
+[2.018s] creating /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+[2.018s] copying launch/camera.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+[2.018s] copying launch/rtabmap.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+[2.018s] creating /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+[2.019s] copying config/rtabmap_rgbd.yaml -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+[2.019s] copying config/depthai_camera.yaml -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+[2.019s] creating /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/config/rviz
+[2.019s] copying config/rviz/rgbd.rviz -> /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/share/vio_perception_pipeline/config/rviz
+[2.019s] running install_egg_info
+[2.025s] Copying ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info to /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline-0.0.0-py3.10.egg-info
+[2.028s] running install_scripts
+[2.075s] writing list of installed files to '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/install.log'
+[2.163s] Invoked command in '/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/vio_perception_pipeline' returned '0': PYTHONPATH=/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/install/vio_perception_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/vio_perception_pipeline build --build-base /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/build install --record /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/build/vio_perception_pipeline/install.log --single-version-externally-managed install_data

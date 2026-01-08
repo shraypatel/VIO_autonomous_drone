@@ -1,6 +1,7 @@
 devel/
 logs/
 build/
+ros2_ws/src/build/
 bin/
 lib/
 msg_gen/

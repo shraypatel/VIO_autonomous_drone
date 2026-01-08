@@ -1,0 +1,7 @@
+running develop
+running egg_info
+writing ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/PKG-INFO
+writing dependency_links to ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/dependency_links.txt
+writing requirements to ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/requires.txt
+writing top-level names to ../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/top_level.txt
+error: package directory 'vio_perception_pipeline' does not exist
