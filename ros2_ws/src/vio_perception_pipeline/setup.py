@@ -1,13 +1,13 @@
 import os
 from glob import glob
-from setuptools import setup
+from setuptools import setup, find_packages
 
 package_name = "vio_perception_pipeline"
 
 setup(
     name=package_name,
     version="0.0.0",
-    packages=[],
+    packages=find_packages(),
     data_files=[
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
@@ -17,9 +17,13 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="you",
-    maintainer_email="you@todo.todo",
-    description="DepthAI + RTAB-Map perception pipeline bringup",
-    license="TODO",
+    maintainer="group7",
+    maintainer_email="shraypatel@gmail.com",
+    description="DepthAI + RTAB-Map perception pipeline with PX4 coordinate transformation",
+    license="MIT",
+    entry_points={
+        "console_scripts": [
+            "enu_to_ned_transformer = vio_perception_pipeline.enu_to_ned_transformer:main",
+        ],
+    },
 )
-

@@ -12,6 +12,7 @@ from launch_ros.descriptions import ComposableNode
 
 def launch_setup(context, *args, **kwargs):
     name = LaunchConfiguration("name").perform(context)
+    use_ned_transform = LaunchConfiguration("use_ned_transform").perform(context).lower() == "true"
     pkg = get_package_share_directory("vio_perception_pipeline")
 
     # Use your DepthAI config for the camera
@@ -39,7 +40,7 @@ def launch_setup(context, *args, **kwargs):
         ("depth/image",     f"{name}/stereo/image_raw"),
     ]
 
-    return [
+    nodes = [
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(os.path.join(pkg, "launch", "camera.launch.py")),
             launch_arguments={
@@ -85,6 +86,30 @@ def launch_setup(context, *args, **kwargs):
         ),
     ]
 
+    # Add ENU→NED transformer for PX4 integration
+    if use_ned_transform:
+        nodes.append(
+            Node(
+                package="vio_perception_pipeline",
+                executable="enu_to_ned_transformer",
+                name="enu_to_ned_transformer",
+                output="screen",
+                parameters=[{
+                    "input_odom_topic": "/odom",
+                    "output_odom_topic": "/odom_ned",
+                    "output_pose_topic": "/mavros/vision_pose/pose",
+                    "output_twist_topic": "/mavros/vision_speed/speed_twist",
+                    "publish_pose": True,
+                    "publish_twist": True,
+                    "publish_tf": True,
+                    "ned_frame_id": "odom_ned",
+                    "frd_child_frame_id": "base_link_frd",
+                }],
+            )
+        )
+
+    return nodes
+
 
 def generate_launch_description():
     pkg = get_package_share_directory("vio_perception_pipeline")
@@ -105,7 +130,11 @@ def generate_launch_description():
             default_value="false",
             description="Launch RTAB-Map visualization (requires display)",
         ),
+        DeclareLaunchArgument(
+            "use_ned_transform",
+            default_value="true",
+            description="Enable ENU→NED coordinate transform for PX4 integration",
+        ),
 
         OpaqueFunction(function=launch_setup),
     ])
-
