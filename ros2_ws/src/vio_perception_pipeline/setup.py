@@ -24,6 +24,7 @@ setup(
     entry_points={
         "console_scripts": [
             "enu_to_ned_transformer = vio_perception_pipeline.enu_to_ned_transformer:main",
+            "auto_reset_odom = vio_perception_pipeline.auto_reset_odom:main",
         ],
     },
 )
