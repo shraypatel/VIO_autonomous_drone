@@ -1,0 +1,173 @@
+# Target labels
+ Extra
+ opencv_cudaimgproc
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/include/opencv2/cudaimgproc.hpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/bilateral_filter.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/blend.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/canny.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/color.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/connectedcomponents.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/corners.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/generalized_hough.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/gftt.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/histogram.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/hough_circles.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/hough_lines.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/hough_segments.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/match_template.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/mean_shift.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/moments.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/mssegmentation.cpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cvt_color_internal.h
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/precomp.hpp
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/bilateral_filter.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/blend.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/build_point_list.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/canny.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/clahe.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/color.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/connectedcomponents.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/corners.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/debayer.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/generalized_hough.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/gftt.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/hist.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/hough_circles.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/hough_lines.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/hough_segments.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/match_template.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/mean_shift.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaimgproc/src/cuda/moments.cu
+ Extra
+ opencv_cudaimgproc
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_bilateral_filter.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_blend.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_build_point_list.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_canny.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_clahe.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_color.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_connectedcomponents.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_corners.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_debayer.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_generalized_hough.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_gftt.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_hist.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_hough_circles.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_hough_lines.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_hough_segments.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_match_template.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_mean_shift.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaimgproc/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_moments.cu.o

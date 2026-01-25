@@ -1,0 +1,120 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/include/opencv2/alphamat.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/cm.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/infoflow.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/intraU.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/local_info.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/3rdparty/KDTreeVectorOfVectorsAdaptor.h",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/3rdparty/nanoflann.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/cm.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/intraU.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/local_info.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/alphamat/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_alphamat",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h"
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_alphamat",
+			"Module"
+		],
+		"name" : "opencv_alphamat"
+	}
+}

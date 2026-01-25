@@ -1,0 +1,35 @@
+# Target labels
+ Extra
+ opencv_aruco
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/include/opencv2/aruco.hpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/include/opencv2/aruco/aruco_calib.hpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/include/opencv2/aruco/charuco.hpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/aruco.cpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/aruco_calib.cpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/charuco.cpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/precomp.hpp
+ Extra
+ opencv_aruco
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp

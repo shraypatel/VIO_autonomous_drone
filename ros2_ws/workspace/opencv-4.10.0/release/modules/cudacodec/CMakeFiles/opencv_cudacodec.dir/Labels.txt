@@ -1,0 +1,105 @@
+# Target labels
+ Extra
+ opencv_cudacodec
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/include/opencv2/cudacodec.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/NvEncoder.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/NvEncoderCuda.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/cuvid_video_source.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/ffmpeg_video_source.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/frame_queue.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/thread.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_decoder.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_parser.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_reader.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_source.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_writer.cpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/NvEncoder.h
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/NvEncoderCuda.h
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/cuvid_video_source.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/ffmpeg_video_source.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/frame_queue.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/precomp.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/thread.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_decoder.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_parser.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/video_source.hpp
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/cuda/nv12_to_rgb.cu
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudacodec/src/cuda/rgb_to_yv12.cu
+ Extra
+ opencv_cudacodec
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudacodec/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_nv12_to_rgb.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudacodec/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_rgb_to_yv12.cu.o

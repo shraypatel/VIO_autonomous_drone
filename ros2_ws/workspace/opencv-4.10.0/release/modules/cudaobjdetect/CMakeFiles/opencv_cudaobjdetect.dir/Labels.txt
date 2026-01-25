@@ -1,0 +1,37 @@
+# Target labels
+ Extra
+ opencv_cudaobjdetect
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/include/opencv2/cudaobjdetect.hpp
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/src/cascadeclassifier.cpp
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/src/hog.cpp
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/src/cuda/lbp.hpp
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/src/precomp.hpp
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/src/cuda/hog.cu
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudaobjdetect/src/cuda/lbp.cu
+ Extra
+ opencv_cudaobjdetect
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaobjdetect/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_hog.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudaobjdetect/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_lbp.cu.o

@@ -1,0 +1,23 @@
+# Target labels
+ Extra
+ opencv_rapid
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/rapid/include/opencv2/rapid.hpp
+ Extra
+ opencv_rapid
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/rapid/src/histogram.cpp
+ Extra
+ opencv_rapid
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/rapid/src/rapid.cpp
+ Extra
+ opencv_rapid
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/rapid/src/precomp.hpp
+ Extra
+ opencv_rapid
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp

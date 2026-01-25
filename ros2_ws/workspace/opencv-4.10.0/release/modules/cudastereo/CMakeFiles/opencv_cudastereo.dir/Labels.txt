@@ -1,0 +1,81 @@
+# Target labels
+ Extra
+ opencv_cudastereo
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/include/opencv2/cudastereo.hpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/disparity_bilateral_filter.cpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/stereobm.cpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/stereobp.cpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/stereocsbp.cpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/stereosgm.cpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/util.cpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/disparity_bilateral_filter.hpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/stereocsbp.hpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/stereosgm.hpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/precomp.hpp
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/disparity_bilateral_filter.cu
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/stereobm.cu
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/stereobp.cu
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/stereocsbp.cu
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/stereosgm.cu
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudastereo/src/cuda/util.cu
+ Extra
+ opencv_cudastereo
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudastereo/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_disparity_bilateral_filter.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudastereo/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_stereobm.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudastereo/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_stereobp.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudastereo/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_stereocsbp.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudastereo/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_stereosgm.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudastereo/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_util.cu.o

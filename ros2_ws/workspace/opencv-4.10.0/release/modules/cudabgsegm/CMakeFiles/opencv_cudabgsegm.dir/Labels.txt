@@ -1,0 +1,37 @@
+# Target labels
+ Extra
+ opencv_cudabgsegm
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/include/opencv2/cudabgsegm.hpp
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/src/mog.cpp
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/src/mog2.cpp
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/src/cuda/mog2.hpp
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/src/precomp.hpp
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/src/cuda/mog.cu
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/cudabgsegm/src/cuda/mog2.cu
+ Extra
+ opencv_cudabgsegm
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudabgsegm/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_mog.cu.o
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/modules/cudabgsegm/CMakeFiles/cuda_compile_1.dir/src/cuda/cuda_compile_1_generated_mog2.cu.o

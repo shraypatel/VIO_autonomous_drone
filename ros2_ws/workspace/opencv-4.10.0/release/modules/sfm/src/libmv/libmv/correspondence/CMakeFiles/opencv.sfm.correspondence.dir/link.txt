@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../lib/libopencv.sfm.correspondence.a CMakeFiles/opencv.sfm.correspondence.dir/feature_matching.cc.o CMakeFiles/opencv.sfm.correspondence.dir/matches.cc.o CMakeFiles/opencv.sfm.correspondence.dir/nRobustViewMatching.cc.o
+/usr/bin/ranlib ../../../../../../lib/libopencv.sfm.correspondence.a

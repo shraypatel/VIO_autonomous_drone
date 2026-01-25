@@ -1,0 +1,102 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/include/opencv2/ccalib.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/include/opencv2/ccalib/multicalib.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/include/opencv2/ccalib/omnidir.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/include/opencv2/ccalib/randpattern.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/src/ccalib.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/src/multicalib.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/src/omnidir.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/src/randpattern.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/ccalib/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ccalib",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h"
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_ccalib",
+			"Module"
+		],
+		"name" : "opencv_ccalib"
+	}
+}

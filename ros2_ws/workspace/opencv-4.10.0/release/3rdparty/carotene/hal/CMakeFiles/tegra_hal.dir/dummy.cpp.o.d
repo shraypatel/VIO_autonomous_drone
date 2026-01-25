@@ -1,0 +1,3 @@
+3rdparty/carotene/hal/CMakeFiles/tegra_hal.dir/dummy.cpp.o: \
+ /home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/3rdparty/carotene/hal/dummy.cpp \
+ /usr/include/stdc-predef.h

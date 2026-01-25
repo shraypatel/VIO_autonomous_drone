@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../lib/libopencv.sfm.numeric.a CMakeFiles/opencv.sfm.numeric.dir/numeric.cc.o CMakeFiles/opencv.sfm.numeric.dir/poly.cc.o
+/usr/bin/ranlib ../../../../../../lib/libopencv.sfm.numeric.a

@@ -1,0 +1,84 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/include/opencv2/aruco.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/include/opencv2/aruco/aruco_calib.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/include/opencv2/aruco/charuco.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/aruco.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/aruco_calib.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/charuco.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/aruco/src/precomp.hpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_aruco",
+				"Module"
+			]
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h"
+		},
+		{
+			"file" : "/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_aruco",
+			"Module"
+		],
+		"name" : "opencv_aruco"
+	}
+}

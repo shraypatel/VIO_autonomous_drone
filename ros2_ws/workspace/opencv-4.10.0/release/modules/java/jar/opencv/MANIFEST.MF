@@ -1,0 +1,5 @@
+Specification-Title: OpenCV
+Specification-Version: 4.10.0
+Implementation-Title: OpenCV
+Implementation-Version: 75f3a76-dirty
+Implementation-Date: 2026-01-15T00:59:45Z

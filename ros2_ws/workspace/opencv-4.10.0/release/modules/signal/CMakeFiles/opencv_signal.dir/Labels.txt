@@ -1,0 +1,23 @@
+# Target labels
+ Extra
+ opencv_signal
+ Module
+# Source files and their labels
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/signal/include/opencv2/signal.hpp
+ Extra
+ opencv_signal
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/signal/include/opencv2/signal/signal_resample.hpp
+ Extra
+ opencv_signal
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/signal/src/signal_resample.cpp
+ Extra
+ opencv_signal
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv_contrib-4.10.0/modules/signal/src/precomp.hpp
+ Extra
+ opencv_signal
+ Module
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/cvconfig.h
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/workspace/opencv-4.10.0/release/opencv2/opencv_modules.hpp
