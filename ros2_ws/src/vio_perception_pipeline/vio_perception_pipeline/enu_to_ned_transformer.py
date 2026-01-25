@@ -80,10 +80,10 @@ class EnuToNedTransformer(Node):
         
         # QoS for publishing (RELIABLE for compatibility with RViz2 and standard tools)
         publish_qos = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
+            reliability=ReliabilityPolicy.BEST_EFFORT, 
             durability=DurabilityPolicy.VOLATILE,
             history=HistoryPolicy.KEEP_LAST,
-            depth=10,
+            depth=1,
         )
 
         # Subscriber (BEST_EFFORT to receive from RTAB-Map)
