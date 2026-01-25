@@ -1,9 +1,1 @@
-/**:
-  ros__parameters:
-    camera:
-      i_enable_imu: true
-      i_enable_ir: true
-      i_nn_type: spatial
-      i_pipeline_type: RGBD
-    nn:
-      i_nn_config_path: depthai_ros_driver/mobilenet
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/vio_perception_pipeline/config/depthai_camera.yaml

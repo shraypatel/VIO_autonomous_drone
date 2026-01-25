@@ -1,0 +1,6 @@
+source;share/rtabmap_python/hook/pythonpath.ps1
+source;share/rtabmap_python/hook/pythonpath.dsv
+source;share/rtabmap_python/hook/pythonpath.sh
+source;share/rtabmap_python/hook/ament_prefix_path.ps1
+source;share/rtabmap_python/hook/ament_prefix_path.dsv
+source;share/rtabmap_python/hook/ament_prefix_path.sh

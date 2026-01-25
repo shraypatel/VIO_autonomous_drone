@@ -1,0 +1,1 @@
+/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/vins/ament_cmake_core/vinsConfig.cmake

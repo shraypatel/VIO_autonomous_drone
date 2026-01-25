@@ -1,0 +1,8 @@
+source;share/loop_fusion/hook/cmake_prefix_path.ps1
+source;share/loop_fusion/hook/cmake_prefix_path.dsv
+source;share/loop_fusion/hook/cmake_prefix_path.sh
+source;share/loop_fusion/local_setup.bash
+source;share/loop_fusion/local_setup.dsv
+source;share/loop_fusion/local_setup.ps1
+source;share/loop_fusion/local_setup.sh
+source;share/loop_fusion/local_setup.zsh
