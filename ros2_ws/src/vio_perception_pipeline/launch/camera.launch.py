@@ -5,6 +5,8 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import ComposableNodeContainer, LoadComposableNodes
+from launch_ros.descriptions import ComposableNode
 
 
 def generate_launch_description():
@@ -27,7 +29,7 @@ def generate_launch_description():
         DeclareLaunchArgument("name", default_value="oak"),
         DeclareLaunchArgument(
             "params_file",
-            default_value=os.path.join(pkg, "config", "depthai_camera.yaml"),
+            default_value="/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/vio_perception_pipeline/config/depthai_camera.yaml",
         ),
         DeclareLaunchArgument("use_rviz", default_value="false"),
 
@@ -47,6 +49,7 @@ def generate_launch_description():
                 "name": name,
                 "params_file": params_file,
                 "use_rviz": use_rviz,
+                "rectify_rgb": "false",
                 "parent_frame": parent_frame,
                 "cam_pos_x": cam_pos_x,
                 "cam_pos_y": cam_pos_y,
@@ -54,6 +57,8 @@ def generate_launch_description():
                 "cam_roll": cam_roll,
                 "cam_pitch": cam_pitch,
                 "cam_yaw": cam_yaw,
+                "rgb_resolution": "480p",
+                "rgb_fps": "15.0",
             }.items(),
         ),
     ])
