@@ -1,9 +1,21 @@
-/**:
+oak:
   ros__parameters:
     camera:
       i_enable_imu: true
       i_enable_ir: true
-      i_nn_type: spatial
-      i_pipeline_type: RGBD
-    nn:
-      i_nn_config_path: depthai_ros_driver/mobilenet
+      i_nn_type: "none"        
+      i_pipeline_type: "RGBD"
+    rgb:
+      i_resolution: "1080P"
+      i_set_isp_scale: true
+      i_isp_num: 1
+      i_isp_den: 3               # 1920/3 = 640, 1080/3 = 360
+      i_fps: 15.0
+    stereo:
+      i_resolution: "720P"       
+      i_set_input_size: true     
+      i_width: 640
+      i_height: 360
+      i_fps: 15.0
+      i_align_depth: true
+      i_depth_preset: "HIGH_DENSITY"
