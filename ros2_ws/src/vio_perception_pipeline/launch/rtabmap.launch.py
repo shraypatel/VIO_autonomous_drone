@@ -6,87 +6,114 @@ from launch.actions import DeclareLaunchArgument, OpaqueFunction, IncludeLaunchD
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition
-from launch_ros.actions import LoadComposableNodes, Node
-from launch_ros.descriptions import ComposableNode
-
+from launch_ros.actions import Node
 
 def launch_setup(context, *args, **kwargs):
     name = LaunchConfiguration("name").perform(context)
     use_ned_transform = LaunchConfiguration("use_ned_transform").perform(context).lower() == "true"
     pkg = get_package_share_directory("vio_perception_pipeline")
 
-    # Use your DepthAI config for the camera
-    camera_params_file = LaunchConfiguration("camera_params_file")
-    # RTAB-Map params yaml (optional; you can also keep parameters inline)
-    rtabmap_params_file = LaunchConfiguration("rtabmap_params_file")
+    camera_params_file = LaunchConfiguration("camera_params_file").perform(context)
 
-    # Common parameters passed to RTAB-Map nodes (you can move these into yaml)
     parameters = [{
         "frame_id": name,
         "subscribe_rgb": True,
         "subscribe_depth": True,
         "subscribe_odom_info": True,
         "approx_sync": True,
-        "approx_sync_max_interval": 0.05,  # Allow up to 50ms timing difference
-        "Rtabmap/DetectionRate": "3.5",
-        # If you want to load more params from yaml:
-        # "config_path": rtabmap_params_file,  # some setups use this; depends on RTAB-Map version
+        "approx_sync_max_interval": 0.05,
+        "queue_size": 10,
+
+        # Visual Odometry
+        "Vis/CorNNType": "1",
+        "Odom/GuessMotion": "true",        
+        "Odom/MinInliers": "20",           
+        "Odom/InlierDistance": "0.1",      
+        "Odom/Iterations": "30",           
+        "Odom/ResetCountdown": "0",        
+        "Odom/Force3DoF": "false",
+        "Odom/ImageDecimation": "1",
+        "ORB/WTA_K": "2",
+        "Odom/KeyFrameThr": "0.3",
+        
+        # Feature Detector (ORB Specific)       
+        "Kp/CorNNType": "3",
+        "Kp/MaxFeatures": "300",                      
+        "ORB/ScaleFactor": "1.2",
+        "ORB/NLevels": "8",
+
+        "Kp/DictionaryPath": "",           
+        "Mem/BinDataKept": "true",         
+
+        # Performance & Sync
+        "Rtabmap/ImagesAlreadyRectified": "true",    
+        "Rtabmap/TimeThr": "0",            
+        "Rtabmap/PublishStats": "true",
+        
+        "Mem/STMSize": "30",
+        "Rtabmap/MemoryThr": "500",      
+
+        # GPU Acceleration Flags
+        "SURF/GpuVersion": "true",        
+        "FAST/GpuVersion": "true",
+        "OdomBOW/GpuVersion": "true",
+        "always_process_most_recent_frame": True,
     }]
 
-    # DepthAI -> RTAB-Map input remaps (matches Luxonis RGBD pipeline)
+    odom_parameters = [{
+            **parameters[0], 
+            "Vis/FeatureType": "10",      
+            "ORB/Gpu": "true",             
+            "Odom/Strategy": "1",          
+            "Vis/MaxFeatures": "300",      
+        }]
+
+        # SLAM PARAMETERS
+    slam_parameters = [{
+        **parameters[0],
+        "Kp/DetectorStrategy": "8",     
+        "Vis/FeatureType": "10",        
+        "Rtabmap/DetectionRate": "1.0", 
+        "Mem/IncrementalMemory": "true",
+    }]
+
     remappings = [
-        ("rgb/image",       f"{name}/rgb/image_rect"),
+        ("rgb/image",       f"{name}/rgb/image_raw"),
         ("rgb/camera_info", f"{name}/rgb/camera_info"),
         ("depth/image",     f"{name}/stereo/image_raw"),
     ]
 
     nodes = [
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(os.path.join(pkg, "launch", "camera.launch.py")),
-            launch_arguments={
-                "name": name,
-                "params_file": camera_params_file,
-                "use_rviz": "false",
-            }.items(),
+
+        Node(
+            package="rtabmap_odom",
+            executable="rgbd_odometry",
+            name="rgbd_odometry",
+            output="screen",
+            parameters=odom_parameters,
+            remappings=remappings,
+    #        arguments=["--udebug"]
         ),
 
-        LoadComposableNodes(
-            target_container=f"{name}_container",
-            composable_node_descriptions=[
-                ComposableNode(
-                    package="rtabmap_odom",
-                    plugin="rtabmap_odom::RGBDOdometry",
-                    name="rgbd_odometry",
-                    parameters=parameters,
-                    remappings=remappings,
-                ),
-            ],
-        ),
-
-        LoadComposableNodes(
-            target_container=f"{name}_container",
-            composable_node_descriptions=[
-                ComposableNode(
-                    package="rtabmap_slam",
-                    plugin="rtabmap_slam::CoreWrapper",
-                    name="rtabmap",
-                    parameters=parameters,
-                    remappings=remappings,
-                ),
-            ],
+        Node(
+            package="rtabmap_slam",
+            executable="rtabmap",
+            name="rtabmap",
+            output="screen",
+            parameters=slam_parameters,
+            remappings=remappings,
         ),
 
         Node(
             package="rtabmap_viz",
             executable="rtabmap_viz",
             output="screen",
-            parameters=parameters,
+            parameters=slam_parameters,
             remappings=remappings,
             condition=IfCondition(LaunchConfiguration("use_rtabmap_viz")),
         ),
     ]
 
-    # Add ENU→NED transformer for PX4 integration
     if use_ned_transform:
         nodes.append(
             Node(
@@ -102,6 +129,7 @@ def launch_setup(context, *args, **kwargs):
                     "publish_pose": True,
                     "publish_twist": True,
                     "publish_tf": True,
+                    "publish_odom": True,
                     "ned_frame_id": "odom_ned",
                     "frd_child_frame_id": "base_link_frd",
                 }],
@@ -110,31 +138,14 @@ def launch_setup(context, *args, **kwargs):
 
     return nodes
 
-
 def generate_launch_description():
     pkg = get_package_share_directory("vio_perception_pipeline")
 
     return LaunchDescription([
         DeclareLaunchArgument("name", default_value="oak"),
-
-        DeclareLaunchArgument(
-            "camera_params_file",
-            default_value=os.path.join(pkg, "config", "depthai_camera.yaml"),
-        ),
-        DeclareLaunchArgument(
-            "rtabmap_params_file",
-            default_value=os.path.join(pkg, "config", "rtabmap_rgbd.yaml"),
-        ),
-        DeclareLaunchArgument(
-            "use_rtabmap_viz",
-            default_value="false",
-            description="Launch RTAB-Map visualization (requires display)",
-        ),
-        DeclareLaunchArgument(
-            "use_ned_transform",
-            default_value="true",
-            description="Enable ENU→NED coordinate transform for PX4 integration",
-        ),
-
+        DeclareLaunchArgument("camera_params_file", default_value="/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/src/vio_perception_pipeline/config/depthai_camera.yaml"),
+        #DeclareLaunchArgument("camera_params_file", default_value=os.path.join(pkg, "config", "depthai_camera.yaml")),
+        DeclareLaunchArgument("use_rtabmap_viz", default_value="false"),
+        DeclareLaunchArgument("use_ned_transform", default_value="true"),
         OpaqueFunction(function=launch_setup),
     ])
