@@ -64,8 +64,9 @@ def launch_setup(context, *args, **kwargs):
             **parameters[0], 
             "Vis/FeatureType": "10",      
             "ORB/Gpu": "true",             
-            "Odom/Strategy": "1",          
-            "Vis/MaxFeatures": "300",      
+            "Odom/Strategy": "0",          
+            "Vis/MaxFeatures": "300",
+            "OdomF2M/BundleAdjustment": "0",     # disable local BA to save CPU
         }]
 
         # SLAM PARAMETERS
