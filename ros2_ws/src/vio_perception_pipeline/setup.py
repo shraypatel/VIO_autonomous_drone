@@ -25,6 +25,7 @@ setup(
         "console_scripts": [
             "enu_to_ned_transformer = vio_perception_pipeline.enu_to_ned_transformer:main",
             "auto_reset_odom = vio_perception_pipeline.auto_reset_odom:main",
+            "mavsdk_takeoff_hover_land = vio_perception_pipeline.mavsdk_takeoff_hover_land:main",
         ],
     },
 )
