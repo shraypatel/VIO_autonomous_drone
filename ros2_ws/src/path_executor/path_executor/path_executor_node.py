@@ -546,7 +546,7 @@ class PathExecutorNode(Node):
             vz_map = float(dz * inv_dist * speed_cmd)
             twist.linear.z = vz_map
 
-            # Gazebo MulticopterVelocityControl expects linear velocity in body
+            # PX4 offboard velocity control expects linear velocity in body
             # frame. Convert map-frame tracking velocity to body frame.
             if self.cmd_vel_is_body_frame:
                 cy = math.cos(yaw)
