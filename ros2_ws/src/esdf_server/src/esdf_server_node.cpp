@@ -477,9 +477,9 @@ private:
       pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_transformed(new pcl::PointCloud<pcl::PointXYZ>);
       pcl::fromROSMsg(cloud_transformed_msg, *cloud_transformed);
 
-    const double sensor_x = transform.transform.translation.x;
-    const double sensor_y = transform.transform.translation.y;
-    const double sensor_z = transform.transform.translation.z;
+      const double sensor_x = transform.transform.translation.x;
+      const double sensor_y = transform.transform.translation.y;
+      const double sensor_z = transform.transform.translation.z;
 
     pcl::PointCloud<pcl::PointXYZ>::Ptr filtered(new pcl::PointCloud<pcl::PointXYZ>);
     for (const auto & pt : cloud_transformed->points) {
