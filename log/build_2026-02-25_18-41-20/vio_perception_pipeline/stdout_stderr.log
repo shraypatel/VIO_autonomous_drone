@@ -1,0 +1,63 @@
+running egg_info
+creating ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info
+writing ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/PKG-INFO
+writing dependency_links to ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/dependency_links.txt
+writing entry points to ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/entry_points.txt
+writing requirements to ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/requires.txt
+writing top-level names to ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/top_level.txt
+writing manifest file '../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/SOURCES.txt'
+reading manifest file '../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/SOURCES.txt'
+writing manifest file '../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build
+creating /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib
+creating /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+copying vio_perception_pipeline/auto_reset_odom.py -> /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+copying vio_perception_pipeline/rtabmap_odometry_node.py -> /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+copying vio_perception_pipeline/enu_to_ned_transformer.py -> /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+copying vio_perception_pipeline/mavsdk_takeoff_hover_land.py -> /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+copying vio_perception_pipeline/rtabmap_slam_node.py -> /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+copying vio_perception_pipeline/__init__.py -> /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline
+running install
+running install_lib
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+copying /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline/auto_reset_odom.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+copying /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline/rtabmap_odometry_node.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+copying /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline/enu_to_ned_transformer.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+copying /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline/mavsdk_takeoff_hover_land.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+copying /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline/rtabmap_slam_node.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+copying /home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/build/lib/vio_perception_pipeline/__init__.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline
+byte-compiling /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline/auto_reset_odom.py to auto_reset_odom.cpython-310.pyc
+byte-compiling /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline/rtabmap_odometry_node.py to rtabmap_odometry_node.cpython-310.pyc
+byte-compiling /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline/enu_to_ned_transformer.py to enu_to_ned_transformer.cpython-310.pyc
+byte-compiling /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline/mavsdk_takeoff_hover_land.py to mavsdk_takeoff_hover_land.cpython-310.pyc
+byte-compiling /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline/rtabmap_slam_node.py to rtabmap_slam_node.cpython-310.pyc
+byte-compiling /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/ament_index
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/ament_index/resource_index
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/ament_index/resource_index/packages
+copying resource/vio_perception_pipeline -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/ament_index/resource_index/packages
+copying package.xml -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+copying launch/autonomous_hover.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+copying launch/camera.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+copying launch/full_pipeline.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+copying launch/rtabmap.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+copying launch/mavros.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+copying launch/enu_to_ned.launch.py -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/launch
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+copying config/enu_to_ned.yaml -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+copying config/rtabmap_rgbd.yaml -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+copying config/depthai_camera.yaml -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config
+creating /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config/rviz
+copying config/rviz/enu_ned_comparison.rviz -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config/rviz
+copying config/rviz/rgbd.rviz -> /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/share/vio_perception_pipeline/config/rviz
+running install_egg_info
+Copying ../../../build/vio_perception_pipeline/vio_perception_pipeline.egg-info to /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/python3.10/site-packages/vio_perception_pipeline-0.0.0-py3.10.egg-info
+running install_scripts
+Installing auto_reset_odom script to /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/vio_perception_pipeline
+Installing enu_to_ned_transformer script to /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/vio_perception_pipeline
+Installing mavsdk_takeoff_hover_land script to /home/group7/Desktop/VIO_autonomous_drone/install/vio_perception_pipeline/lib/vio_perception_pipeline
+writing list of installed files to '/home/group7/Desktop/VIO_autonomous_drone/build/vio_perception_pipeline/install.log'
