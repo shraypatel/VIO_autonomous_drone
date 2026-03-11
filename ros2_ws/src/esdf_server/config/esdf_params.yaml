@@ -1,0 +1,32 @@
+# ESDF server parameters (OctoMap fallback backend)
+# Input: PointCloud2 from RTAB-Map or OAK-D S2 depth camera; output: GetDistance service
+
+esdf_server:
+  ros__parameters:
+    point_cloud_topic: "/oak_d_s2/depth/points"
+    map_frame_id: "map"
+    voxel_size: 0.05
+    max_range: 5.0
+    min_range: 0.4
+    x_min: -10.0
+    x_max: 10.0
+    y_min: -10.0
+    y_max: 10.0
+    z_min: -0.5
+    z_max: 3.0
+    publish_esdf_slice: true
+    esdf_slice_height: 0.0
+    esdf_slice_thickness: 3.0
+    accumulate_map: true
+    obstacle_decay_sec: 12.0
+    max_temporal_obstacles: 600000
+    static_layer_enabled: false
+    static_map_file: ""
+    load_static_map_on_start: false
+    save_static_map_on_shutdown: false
+    update_static_from_cloud: false
+    unknown_is_occupied: true
+    max_raycast_points_per_cloud: 300
+    raycast_decimation: 4
+    raycast_step_m: 0.10
+    max_observed_voxels: 1200000
