@@ -1,10 +1,13 @@
 devel/
 logs/
+log/
+ros2_ws/log/
 build/
 bin/
 lib/
 msg_gen/
 srv_gen/
+install/
 msg/*Action.msg
 msg/*ActionFeedback.msg
 msg/*ActionGoal.msg
@@ -49,15 +52,3 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
-
-# ROS2 colcon build artifacts
-ros2_ws/build/
-ros2_ws/install/
-ros2_ws/log/
-ros2_ws/src/build/
-ros2_ws/src/install/
-ros2_ws/src/log/
-
-# Python
-__pycache__/
-*.egg-info/

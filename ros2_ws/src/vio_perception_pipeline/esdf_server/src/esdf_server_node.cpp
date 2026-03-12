@@ -145,7 +145,7 @@ public:
     get_distance_srv_ = create_service<esdf_msgs::srv::GetDistance>(
       "get_distance",
       std::bind(&EsdfServerNode::handleGetDistance, this, std::placeholders::_1, std::placeholders::_2),
-      rclcpp::ServicesQoS(),
+      rmw_qos_profile_services_default,
       srv_cb_group_);
 
     cloud_sub_ = create_subscription<sensor_msgs::msg::PointCloud2>(
