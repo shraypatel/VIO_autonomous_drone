@@ -1,22 +1,21 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>x500_realworld_bringup</name>
+  <name>path_executor</name>
   <version>0.1.0</version>
-  <description>Real-world bringup for Holybro X500 V2 drone with full autonomy stack</description>
+  <description>Path executor: follows nav_msgs/Path with velocity setpoints; hover/abort on planning failure (real hardware)</description>
   <maintainer email="shraypatel@gmail.com">group7</maintainer>
   <license>BSD-3-Clause</license>
 
-  <exec_depend>depthai_cam</exec_depend>
-  <exec_depend>x500_rtabmap_slam</exec_depend>
-  <exec_depend>esdf_msgs</exec_depend>
-  <exec_depend>esdf_server</exec_depend>
-  <exec_depend>rrt_star_planner</exec_depend>
-  <exec_depend>path_executor</exec_depend>
+  <depend>rclpy</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
-  <exec_depend>rviz2</exec_depend>
-  <exec_depend>tf2_ros</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

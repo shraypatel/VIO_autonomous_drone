@@ -25,9 +25,6 @@ setup(
         "console_scripts": [
             "enu_to_ned_transformer = vio_perception_pipeline.enu_to_ned_transformer:main",
             "auto_reset_odom = vio_perception_pipeline.auto_reset_odom:main",
-            "goal_from_rviz_node = vio_perception_pipeline.goal_from_rviz:main",
-            "takeoff_node = vio_perception_pipeline.takeoff_node:main",
-            "path_executor_node = vio_perception_pipeline.path_executor_node:main",
         ],
     },
 )
