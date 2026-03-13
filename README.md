@@ -4,18 +4,20 @@ Autonomous drone system for the **Holybro X500 V2** with **OAK-D S2** camera and
 
 ## System Overview
 
-This repo provides a full autonomy stack for real-world drone operation:
+All perception and autonomy functionality lives in the `vio_perception_pipeline` package, with C++ sub-packages for message definitions, ESDF collision mapping, and RRT* path planning nested inside it.
 
-| Component | Package | Description |
-|-----------|---------|-------------|
-| Camera | `depthai_cam` | OAK-D S2 driver/publisher |
-| SLAM | `x500_rtabmap_slam` | RTABMap SLAM with CUDA support |
-| VIO | `VINS-Fusion-ROS2-humble` | Visual-Inertial Odometry |
-| Collision Map | `esdf_server` | ESDF obstacle distance field |
-| Messages | `esdf_msgs` | GetDistance service interface |
-| Planner | `rrt_star_planner` | 3D RRT* path planning with OMPL |
-| Executor | `path_executor` | Waypoint following with safety hover |
-| Bringup | `x500_realworld_bringup` | Master launch files |
+| Component | Location | Description |
+|-----------|----------|-------------|
+| Camera | `vio_perception_pipeline` (camera.launch.py) | OAK-D S2 via depthai_ros_driver |
+| SLAM | `vio_perception_pipeline` (rtabmap.launch.py) | RTABMap with ORB + GPU + NED |
+| VIO | `VINS-Fusion-ROS2-humble` | Visual-Inertial Odometry (submodule) |
+| Collision Map | `vio_perception_pipeline/esdf_server` | ESDF obstacle distance field (C++) |
+| Messages | `vio_perception_pipeline/esdf_msgs` | GetDistance service interface (C++) |
+| Planner | `vio_perception_pipeline/rrt_star_planner` | 3D RRT* path planning with OMPL (C++) |
+| Goal Relay | `vio_perception_pipeline` (goal_from_rviz) | RViz2 2D goal → 3D goal relay |
+| Executor | `vio_perception_pipeline` (path_executor_node) | Waypoint following with safety hover |
+| Takeoff | `vio_perception_pipeline` (takeoff_node) | Velocity-based takeoff |
+| ENU→NED | `vio_perception_pipeline` (enu_to_ned_transformer) | Coordinate frame transformer |
 
 ## Architecture
 
@@ -48,34 +50,48 @@ colcon build --symlink-install
 source install/setup.bash
 
 # Launch full system
-ros2 launch x500_realworld_bringup full_system.launch.py
+ros2 launch vio_perception_pipeline full_system.launch.py
 
 # Visualization only (bench testing, no actuators)
-ros2 launch x500_realworld_bringup visualization_only.launch.py
+ros2 launch vio_perception_pipeline visualization_only.launch.py
+
+# Autonomy subsystem only (ESDF + RRT* + path executor)
+ros2 launch vio_perception_pipeline autonomy.launch.py
 ```
 
 ## Workspace Structure
 
 ```
 ros2_ws/src/
-├── depthai_cam/              # OAK-D S2 camera driver
-├── depthai-ros/              # DepthAI ROS driver (submodule)
-├── esdf_msgs/                # ESDF service definitions
-├── esdf_server/              # ESDF obstacle map server
-├── path_executor/            # Path following + safety
-├── rrt_star_planner/         # RRT* motion planner
-├── rtabmap/                  # RTABMap SLAM (submodule)
-├── rtabmap_ros/              # RTABMap ROS integration
-├── VINS-Fusion-ROS2-humble/  # VIO (submodule)
-├── vio_perception_pipeline/  # Perception pipeline
-├── vision_opencv/            # OpenCV ROS bridge
-├── x500_realworld_bringup/   # Master launch files
-└── x500_rtabmap_slam/        # SLAM configuration + nodes
+├── vio_perception_pipeline/           # Main pipeline package
+│   ├── vio_perception_pipeline/       # Python package (ament_python)
+│   │   ├── launch/                    # All launch files
+│   │   │   ├── full_system.launch.py
+│   │   │   ├── visualization_only.launch.py
+│   │   │   ├── autonomy.launch.py
+│   │   │   ├── camera.launch.py
+│   │   │   ├── rtabmap.launch.py
+│   │   │   └── ...
+│   │   ├── config/                    # YAML configs + RViz configs
+│   │   └── vio_perception_pipeline/   # Python nodes
+│   │       ├── goal_from_rviz.py
+│   │       ├── takeoff_node.py
+│   │       ├── path_executor_node.py
+│   │       ├── enu_to_ned_transformer.py
+│   │       └── ...
+│   ├── esdf_msgs/                     # C++ ESDF service definitions
+│   ├── esdf_server/                   # C++ ESDF obstacle map server
+│   └── rrt_star_planner/              # C++ RRT* motion planner
+├── depthai-ros/                       # DepthAI ROS driver (submodule)
+├── rtabmap/                           # RTABMap SLAM (submodule)
+├── rtabmap_ros/                       # RTABMap ROS integration (submodule)
+├── VINS-Fusion-ROS2-humble/           # VIO (submodule)
+└── vision_opencv/                     # OpenCV ROS bridge (submodule)
 ```
 
 ## Safety
 
-⚠️ **Read `ros2_ws/src/path_executor/SAFETY_NOTES.md` before flight testing.**
+⚠️ **Read `ros2_ws/src/vio_perception_pipeline/vio_perception_pipeline/SAFETY_NOTES.md` before flight testing.**
 
 The path executor sends velocity commands to the real flight controller. Always:
 1. Have an RC transmitter with kill switch

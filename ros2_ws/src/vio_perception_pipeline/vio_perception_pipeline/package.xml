@@ -28,12 +28,15 @@
   <exec_depend>image_proc</exec_depend>
   <exec_depend>esdf_msgs</exec_depend>
   <exec_depend>esdf_server</exec_depend>
+  <exec_depend>rrt_star_planner</exec_depend>
 
   <!-- Coordinate transformer dependencies -->
   <exec_depend>rclpy</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
   <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
 
 </package>
