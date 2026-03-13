@@ -1,0 +1,25 @@
+# ENU to NED Coordinate Transformer Configuration
+#
+# This node transforms RTAB-Map odometry output (ENU/FLU) to PX4 (NED/FRD).
+#
+# Coordinate Systems:
+#   RTAB-Map (ROS): ENU (East-North-Up) world, FLU (Forward-Left-Up) body
+#   PX4:            NED (North-East-Down) world, FRD (Forward-Right-Down) body
+
+enu_to_ned_transformer:
+  ros__parameters:
+    # Input topic from RTAB-Map
+    input_odom_topic: "/odom"
+    
+    # Output topics
+    output_odom_topic: "/odom_ned"
+    output_pose_topic: "/mavros/vision_pose/pose"
+    output_twist_topic: "/mavros/vision_speed/speed_twist"
+    
+    # Enable/disable specific outputs
+    publish_pose: true
+    publish_twist: true
+    
+    # Frame IDs for transformed messages
+    ned_frame_id: "odom_ned"
+    frd_child_frame_id: "base_link_frd"
