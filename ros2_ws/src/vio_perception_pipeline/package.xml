@@ -3,7 +3,7 @@
 <package format="3">
   <name>vio_perception_pipeline</name>
   <version>0.0.0</version>
-  <description>DepthAI + RTAB-Map perception pipeline with PX4 coordinate transformation and autonomy stack</description>
+  <description>DepthAI + RTAB-Map perception pipeline with PX4 coordinate transformation</description>
   <maintainer email="shraypatel@gmail.com">group7</maintainer>
   <license>MIT</license>
 
@@ -25,20 +25,13 @@
 
   <exec_depend>rviz2</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
-  <exec_depend>tf2_geometry_msgs</exec_depend>
   <exec_depend>image_proc</exec_depend>
 
   <!-- Coordinate transformer dependencies -->
   <exec_depend>rclpy</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
   <exec_depend>python3-scipy</exec_depend>
-
-  <!-- Autonomy stack dependencies -->
-  <exec_depend>esdf_msgs</exec_depend>
-  <exec_depend>esdf_server</exec_depend>
-  <exec_depend>rrt_star_planner</exec_depend>
 
 </package>
