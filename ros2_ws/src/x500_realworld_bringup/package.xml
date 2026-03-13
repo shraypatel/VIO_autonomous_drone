@@ -7,16 +7,13 @@
   <maintainer email="shraypatel@gmail.com">group7</maintainer>
   <license>BSD-3-Clause</license>
 
-  <exec_depend>depthai_cam</exec_depend>
-  <exec_depend>x500_rtabmap_slam</exec_depend>
+  <exec_depend>vio_perception_pipeline</exec_depend>
   <exec_depend>esdf_msgs</exec_depend>
   <exec_depend>esdf_server</exec_depend>
   <exec_depend>rrt_star_planner</exec_depend>
-  <exec_depend>path_executor</exec_depend>
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>rviz2</exec_depend>
-  <exec_depend>tf2_ros</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

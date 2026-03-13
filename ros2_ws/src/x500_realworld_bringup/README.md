@@ -1,10 +1,10 @@
 # x500_realworld_bringup
 
-Top-level bringup package for the Holybro X500 V2 autonomous drone with full autonomy stack.
+Top-level bringup package for the Holybro X500 V2 autonomous drone.
 
 ## Overview
 
-This package provides master launch files that compose all autonomy packages in the correct order for real-world deployment.
+This package provides master launch files that compose the `vio_perception_pipeline` and C++ autonomy packages (ESDF, RRT* planner) for real-world deployment. All perception and autonomy nodes live in `vio_perception_pipeline`; this package orchestrates them.
 
 ## Hardware Prerequisites
 
@@ -44,26 +44,23 @@ ros2 launch x500_realworld_bringup full_system.launch.py enable_path_executor:=f
 
 ### Visualization Only (Bench Testing)
 ```bash
-# Just RViz2 with TFs — no actuators, safe for bench testing
+# Camera + SLAM + RViz2 — no actuators, safe for bench testing
 ros2 launch x500_realworld_bringup visualization_only.launch.py
 ```
 
 ## System Architecture
 
 ```
-OAK-D S2 Camera ──→ RTABMap SLAM ──→ Point Cloud Filter ──→ ESDF Server
-                                                                    │
-                        RViz2 Goal ──→ Goal Relay ──→ RRT* Planner ←┘
-                                                          │
-                                                    Path Executor ──→ PX4 (cmd_vel)
+vio_perception_pipeline:
+  camera.launch.py  ──→  rtabmap.launch.py  ──→  autonomy.launch.py
+  (OAK-D S2)            (SLAM + VIO + NED)       (ESDF + RRT* + executor)
 ```
 
-## Per-Phase Testing Checklist
+## Testing Checklist
 
-- [ ] **Phase 1 (esdf_msgs)**: `colcon build --packages-select esdf_msgs` succeeds
-- [ ] **Phase 2 (depthai_cam)**: Camera node starts, publishes to `/oak_d_s2/rgb/image_raw`
-- [ ] **Phase 3 (x500_rtabmap_slam)**: RTABMap SLAM starts with correct topic remappings
-- [ ] **Phase 4 (esdf_server)**: ESDF server starts, `get_distance` service responds
-- [ ] **Phase 5 (rrt_star_planner)**: Planner starts, produces path on goal input
-- [ ] **Phase 6 (path_executor)**: Executor starts, publishes velocity commands (props off)
-- [ ] **Phase 7 (bringup)**: Full system launch starts all components in order
+- [ ] **esdf_msgs**: `colcon build --packages-select esdf_msgs` succeeds
+- [ ] **esdf_server**: ESDF server starts, `get_distance` service responds
+- [ ] **rrt_star_planner**: Planner starts, produces path on goal input
+- [ ] **vio_perception_pipeline**: Camera + SLAM + autonomy nodes start correctly
+- [ ] **bringup**: `full_system.launch.py` starts all components in order
+- [ ] **visualization_only**: Camera + SLAM + RViz2 without actuators
