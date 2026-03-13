@@ -26,6 +26,8 @@
   <exec_depend>rviz2</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
   <exec_depend>image_proc</exec_depend>
+  <exec_depend>esdf_msgs</exec_depend>
+  <exec_depend>esdf_server</exec_depend>
 
   <!-- Coordinate transformer dependencies -->
   <exec_depend>rclpy</exec_depend>

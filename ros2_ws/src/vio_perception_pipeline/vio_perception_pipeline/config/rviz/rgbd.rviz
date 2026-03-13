@@ -54,47 +54,11 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        oak:
-          Value: true
-        oak-d-base-frame:
-          Value: true
-        oak_imu_frame:
-          Value: true
-        oak_left_camera_frame:
-          Value: true
-        oak_left_camera_optical_frame:
-          Value: true
-        oak_model_origin:
-          Value: true
-        oak_rgb_camera_frame:
-          Value: true
-        oak_rgb_camera_optical_frame:
-          Value: true
-        oak_right_camera_frame:
-          Value: true
-        oak_right_camera_optical_frame:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
-      Tree:
-        oak-d-base-frame:
-          oak:
-            oak_imu_frame:
-              {}
-            oak_left_camera_frame:
-              oak_left_camera_optical_frame:
-                {}
-            oak_model_origin:
-              {}
-            oak_rgb_camera_frame:
-              oak_rgb_camera_optical_frame:
-                {}
-            oak_right_camera_frame:
-              oak_right_camera_optical_frame:
-                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
