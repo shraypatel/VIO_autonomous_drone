@@ -62,6 +62,8 @@ def launch_setup(context, *args, **kwargs):
                     "vision_pose",         # send VIO pose to PX4 EKF2
                     "vision_speed",        # send VIO velocity to PX4 EKF2
                     "imu",                 # read IMU data
+                    "local_position",      # read EKF2 local position / altitude
+                    "setpoint_velocity",   # stream velocity setpoints (OFFBOARD)
                 ],
             },
         ],
