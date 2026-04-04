@@ -1,1 +1,0 @@
-/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/rtabmap_costmap_plugins/ament_cmake_core/rtabmap_costmap_pluginsConfig.cmake

@@ -1,1 +1,1 @@
-/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/rtabmap_ros/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rtabmap_ros
+rtabmap_conversions;rtabmap_demos;rtabmap_examples;rtabmap_launch;rtabmap_msgs;rtabmap_odom;rtabmap_python;rtabmap_rviz_plugins;rtabmap_slam;rtabmap_sync;rtabmap_util;rtabmap_viz

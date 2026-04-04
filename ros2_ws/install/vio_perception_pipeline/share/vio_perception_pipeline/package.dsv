@@ -4,6 +4,3 @@ source;share/vio_perception_pipeline/hook/pythonpath.sh
 source;share/vio_perception_pipeline/hook/ament_prefix_path.ps1
 source;share/vio_perception_pipeline/hook/ament_prefix_path.dsv
 source;share/vio_perception_pipeline/hook/ament_prefix_path.sh
-source;../../build/vio_perception_pipeline/share/vio_perception_pipeline/hook/pythonpath_develop.ps1
-source;../../build/vio_perception_pipeline/share/vio_perception_pipeline/hook/pythonpath_develop.dsv
-source;../../build/vio_perception_pipeline/share/vio_perception_pipeline/hook/pythonpath_develop.sh

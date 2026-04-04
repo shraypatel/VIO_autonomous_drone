@@ -78,6 +78,7 @@ def launch_setup(context, *args, **kwargs):
         "Mem/IncrementalMemory": "true",
     }]
 
+    # depthai_ros_driver publishes aligned depth on stereo/image_raw, not stereo/depth.
     remappings = [
         ("rgb/image",       f"{name}/rgb/image_raw"),
         ("rgb/camera_info", f"{name}/rgb/camera_info"),

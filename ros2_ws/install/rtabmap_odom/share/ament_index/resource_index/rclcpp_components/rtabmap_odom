@@ -1,1 +1,3 @@
-/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/rtabmap_odom/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/rtabmap_odom
+rtabmap_odom::RGBDOdometry;lib/librtabmap_odom_plugins.so
+rtabmap_odom::StereoOdometry;lib/librtabmap_odom_plugins.so
+rtabmap_odom::ICPOdometry;lib/librtabmap_odom_plugins.so

@@ -1,1 +1,7 @@
-/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/vio_perception_pipeline/config/rtabmap_rgbd.yaml
+# RTAB-Map configuration - balanced for speed and reliability
+/oak:
+  ros__parameters:
+    camera:
+      i_nn_type: none
+    stereo:
+      i_subpixel: false
