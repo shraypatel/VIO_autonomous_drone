@@ -1,7 +1,0 @@
-# RTAB-Map configuration - balanced for speed and reliability
-/oak:
-  ros__parameters:
-    camera:
-      i_nn_type: none
-    stereo:
-      i_subpixel: false

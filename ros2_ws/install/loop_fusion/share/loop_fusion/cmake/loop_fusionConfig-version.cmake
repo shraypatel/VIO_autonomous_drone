@@ -1,1 +1,0 @@
-/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/loop_fusion/ament_cmake_core/loop_fusionConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/group7/Desktop/VIO_autonomous_drone/ros2_ws/build/rtabmap_odom/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

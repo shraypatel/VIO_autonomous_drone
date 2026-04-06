@@ -14,6 +14,7 @@
 #include <future>
 
 #include <rclcpp/rclcpp.hpp>
+#include <rmw/qos_profiles.h>
 #include <rclcpp/executors.hpp>
 #include <nav_msgs/msg/path.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
@@ -213,7 +214,8 @@ public:
     // Service client in a ReentrantCallbackGroup so the executor's second thread
     // can process service responses while the timer callback thread is blocked in solve().
     srv_cb_group_ = create_callback_group(rclcpp::CallbackGroupType::Reentrant);
-    esdf_client_ = create_client<esdf_msgs::srv::GetDistance>("get_distance", rclcpp::ServicesQoS(), srv_cb_group_);
+    esdf_client_ = create_client<esdf_msgs::srv::GetDistance>(
+      "get_distance", rmw_qos_profile_services_default, srv_cb_group_);
 
     replan_timer_ = create_wall_timer(
       std::chrono::duration<double>(1.0 / replan_rate_),
