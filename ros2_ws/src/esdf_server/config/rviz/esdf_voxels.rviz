@@ -145,6 +145,32 @@ Visualization Manager:
         Reliability Policy: Reliable
         Value: /oak/stereo/image_raw
       Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Marker Topic: /esdf_slice
+      Name: ESDF Voxels
+      Namespaces:
+        esdf_slice: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Marker Topic: /rrt_tree
+      Name: RRT Star tree
+      Namespaces:
+        rrt_tree_edges: true
+        rrt_tree_nodes: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Marker Topic: /path_markers
+      Name: RRT Star path and velocity
+      Namespaces:
+        path: true
+        path_velocity: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
